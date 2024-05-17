@@ -48,13 +48,6 @@ PRINT_FUNCTION(){
   
 }
 
-
-
 # Execute MAIN_FUNCTION
 MAIN_FUNCTION $1
-
-### Input number can be sql column atomic_number, symbol or name 
-
-
-
 
