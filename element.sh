@@ -24,7 +24,7 @@ PRINT_FUNCTION(){
   else
     COLUMN=$($PSQL"SELECT atomic_number, name, symbol, atomic_mass, type, melting_point_celsius, boiling_point_celsius FROM properties FULL JOIN elements USING (atomic_number) FULL JOIN types USING (type_ID) WHERE atomic_number=$INPUT; ")
   fi
-                                                                                                                                                                                                            #WHERE name='$INPUT' OR symbol='$INPUT' OR atomic_number=$INPUT;
+                                                                                                                                                                                                           
     # if output not listed
   if [[ -z $COLUMN ]]
   then
